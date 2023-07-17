@@ -1,0 +1,17 @@
+.detalhes__info {
+    color: var(--cinza);
+    font-size: .875rem;
+    line-height: 20px;
+}
+
+.detalhes__linha {
+    background-color: var(--cinza);
+    border: none;
+    height: 1px;
+    margin: 16px 0;
+}
+
+.detalhes__botao {
+    letter-spacing: .475px;
+    margin-top: 16px;
+}

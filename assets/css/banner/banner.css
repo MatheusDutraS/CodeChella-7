@@ -1,0 +1,52 @@
+.banner {
+    position: relative;
+    max-height: 100vh;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.banner__imagem {
+    min-width: 375px;
+    width: 100%;
+    max-height: 100vh;
+}
+
+.gallery-wrapper {
+    overflow-x: auto;
+}
+
+.gallery-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+}
+
+figure {
+    display: block;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .banner {
+        max-width: 1000px;
+    }
+
+    .banner__imagem {
+        min-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .banner {
+        max-width: 1440px;
+    }
+
+    .banner__imagem {
+        min-width: 1440px;
+    }
+}

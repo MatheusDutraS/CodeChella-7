@@ -1,0 +1,68 @@
+{
+    "camisetas": [
+        {
+            "imagem": "./assets/img/Mobile/Imagens cards/Card camiseta.png",
+            "titulo": "Camiseta Conforto",
+            "texto": "Multicores e tamanhos. Tecido de algodão 100%, fresquinho parao verão. Modelagem unissex.",
+            "preco": 70,
+            "id": 1,
+            "cores": "Verde Claro,Preto,OFFwhite",
+            "tamanhos": "PP,P,M,G,GG,XG"
+        }
+    ],
+    "calcas": [
+        {
+            "imagem": "./assets/img/Mobile/Imagens cards/Card calça.png",
+            "titulo": "Calça Alfaiataria",
+            "texto": "Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!",
+            "preco": 180,
+            "id": 1,
+            "cores": "Creme,Beje,Palha,Verde Kiwi",
+            "tamanhos": "34,36,38,40,42,44"
+        }
+    ],
+    "calcados": [
+        {
+            "imagem": "./assets/img/Mobile/Imagens cards/Card tenis.png",
+            "titulo": "Tênis Chunky",
+            "texto": "Snicker casual com dolado mais alto e modelagem",
+            "preco": 250,
+            "id": 1,
+            "cores": "Branco,Preto,Cinza",
+            "tamanhos": "36,37,38,39,40,41,42,43,44"
+        }
+    ],
+    "casacos": [
+        {
+            "imagem": "./assets/img/Mobile/Imagens cards/Card jaqueta jeans.png",
+            "titulo": "Jaqueta Jeans",
+            "texto": "Modelo unissex oversized com gola de camurça. Atemporal e autêntica!",
+            "preco": 150,
+            "id": 1,
+            "cores": "Azul Claro",
+            "tamanhos": "PP,P,M,G,GG,XG"
+        }
+    ],
+    "oculos": [
+        {
+            "imagem": "./assets/img/Mobile/Imagens cards/Card oculos.png",
+            "titulo": "Óculos Redondo",
+            "texto": "Armação metálica em grafite com lentes arredondadas. Sem erro!",
+            "preco": 120,
+            "id": 1,
+            "cores": "Preto,Castanho,Cinza,Azul",
+            "tamanhos": "50-14-140(mm)"
+        }
+    ],
+    "bolsas": [
+        {
+            "imagem": "./assets/img/Mobile/Imagens cards/Card bolsa.png",
+            "titulo": "Bolsa Coringa",
+            "texto": "Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!",
+            "preco": 120,
+            "id": 1,
+            "cores": "Castanho Claro,Preto,Bege,Pastel",
+            "tamanhos": "31.5-14.5-24(cm)"
+        }
+    ]
+}

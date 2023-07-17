@@ -1,0 +1,24 @@
+.descricao__titulo {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+.descricao__texto {
+    flex-grow: 2;
+    font-size: .875rem;
+    line-height: 20px;
+    margin-bottom: 16px;
+}
+
+.descricao__preco {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.descricao__link {
+    letter-spacing: 0.45px;
+    line-height: normal;
+    width: 102px;
+}

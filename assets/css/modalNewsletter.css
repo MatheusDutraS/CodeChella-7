@@ -1,0 +1,28 @@
+.modalNewsletter {
+    display: none;
+    border-radius: 4px;
+    font-family: var(--fonte-primaria);
+    position: fixed;
+    top: calc(50vh - 71px);
+    left: calc(50vw - 171.5px);
+    width: 343px;
+    z-index: 2;
+}
+
+.modalNewsletter__body {
+    background-color: var(--branco);
+    padding: 24px;
+}
+
+.modalNewsletter__descricao {
+    color: var(--preto);
+    line-height: 23px;
+}
+
+@media screen and (min-width: 728px) {
+    .modalNewsletter {
+        top: calc(50vh - 68px);
+        left: calc(50vw - 350px);
+        width: 700px;
+    }
+}

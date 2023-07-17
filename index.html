@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="./assets/img/Favicon-48x.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<title>Loja Meteora</title>
+
+	<link rel="stylesheet" href="./assets/css/reset.css">
+	<link rel="stylesheet" href="./assets/css/base.css">
+	<link rel="stylesheet" href="./assets/css/cabecalho/cabecalho.css">
+	<link rel="stylesheet" href="./assets/css/cabecalho/lista-menu.css">
+	<link rel="stylesheet" href="./assets/css/cabecalho/pesquisa.css">
+	<link rel="stylesheet" href="./assets/css/banner/banner.css">
+	<link rel="stylesheet" href="./assets/css/banner/carousel.css">
+	<link rel="stylesheet" href="./assets/css/cards-categoria/cards-categoria.css">
+	<link rel="stylesheet" href="./assets/css/cards-categoria/imagens-cc.css">
+	<link rel="stylesheet" href="./assets/css/cards-produto/cards-produto.css">
+	<link rel="stylesheet" href="./assets/css/cards-produto/descricao.css">
+	<link rel="stylesheet" href="./assets/css/sobre/sobre.css">
+	<link rel="stylesheet" href="./assets/css/sobre/facilidade.css">
+	<link rel="stylesheet" href="./assets/css/sobre/icone.css">
+	<link rel="stylesheet" href="./assets/css/novidades/novidades.css">
+	<link rel="stylesheet" href="./assets/css/novidades/email.css">
+	<link rel="stylesheet" href="./assets/css/footer.css">
+	<link rel="stylesheet" href="./assets/css/modaisBase/modal-header.css">
+	<link rel="stylesheet" href="./assets/css/modaisBase/modal-overlay.css">
+	<link rel="stylesheet" href="./assets/css/modalNewsletter.css">
+	<link rel="stylesheet" href="./assets/css/modalProduto/modalProduto.css">
+	<link rel="stylesheet" href="./assets/css/modalProduto/modalProduto-descricao.css">
+	<link rel="stylesheet" href="./assets/css/modalProduto/modalProduto-detalhes.css">
+	<link rel="stylesheet" href="./assets/css/modalProduto/modalProduto-opcoes.css">
+</head>
+
+<body>
+	<header class="cabecalho">
+		<a href="#banner" class="escondeVisualmente" autofocus>Item atual header. Pular para o conteúdo principal</a>
+		<div class="cabecalho__imagem"></div>
+
+		<nav class="navbar">
+			<ul class="lista-menu">
+				<li class="lista-menu__item"><a class="lista-menu__link" href="#">Home</a></li>
+				<hr class="lista-menu__linha">
+				<li class="lista-menu__item"><a class="lista-menu__link" href="#">Nossas lojas</a></li>
+				<hr class="lista-menu__linha">
+				<li class="lista-menu__item"><a class="lista-menu__link" href="#">Novidades</a></li>
+				<hr class="lista-menu__linha">
+				<li class="lista-menu__item"><a class="lista-menu__link" href="#">Promoções</a></li>
+			</ul>
+		</nav>
+
+		<div class="pesquisa">
+			<input type="text" class="pesquisa__navegacao" id="campoPesquisa" placeholder="Digite o produto">
+			<a href="#cardsProduto-titulo" tabindex="-1"><button class="pesquisa__botao">Buscar</button></a>
+		</div>
+
+		<div class="menu-hamburguer"></div>
+	</header>
+
+	<main>
+		<section class="banner" id="banner">
+			<a href="#categoria" class="escondeVisualmente">Item atual banner. Pular para o categorias</a>
+			<div class="gallery-wrapper">
+				<div class="gallery">
+					<figure>
+						<picture>
+							<source srcset="./assets/img/Desktop/Banner/Banner-carousel1.png" media="(min-width: 1440px)">
+							<source srcset="./assets/img/Tablet/Banner/Banner-carousel1.png" media="(min-width: 768px)">
+							<img class="banner__imagem item" id="imagem0" src="./assets/img/Mobile/Banner/Banner-carousel1.png" alt>
+						</picture>
+						<figcaption class="legenda">Meteora: Moda de impacto positivo.</figcaption>
+					</figure>
+					<figure>
+						<picture>
+							<source srcset="./assets/img/Desktop/Banner/Banner-carousel2.png" media="(min-width: 1440px)">
+							<source srcset="./assets/img/Tablet/Banner/Banner-carousel2.png" media="(min-width: 768px)">
+							<img class="banner__imagem item" id="imagem1" src="./assets/img/Mobile/Banner/Banner-carousel2.png" alt>
+						</picture>
+						<figcaption class="legenda">Coleção atemporal: Estilo e qualidade para durar.</figcaption>
+					</figure>
+					<figure>
+						<picture>
+							<source srcset="./assets/img/Desktop/Banner/Banner-carousel3.png" media="(min-width: 1440px)">
+							<source srcset="./assets/img/Tablet/Banner/Banner-carousel3.png" media="(min-width: 768px)">
+							<img class="banner__imagem item" id="imagem2" src="./assets/img/Mobile/Banner/Banner-carousel3.png" alt>
+						</picture>
+						<figcaption class="legenda">Coleção atemporal: Alto impacto visual, baixo impacto ambiental</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="carousel">
+				<img class="icone-carousel left-arrow" id="control" src="./assets/img/icones-carousel/Path.png" alt>
+	
+				<nav class="navbar--carousel">
+					<ul class="carousel__indicadores">
+						<li><a href="#imagem0" class="indicador selecionado" id="indicador" data-indicador="0">Imagem 1 <span class="escondeVisualmente">(Banner Atual)</span></a></li>
+						<li><a href="#imagem1" class="indicador" id="indicador" data-indicador="1">Imagem 2</a></li>
+						<li><a href="#imagem2" class="indicador" id="indicador" data-indicador="2">Imagem 3</a></li>
+					</ul>
+				</nav>
+				
+				<img class="icone-carousel right-arrow" id="control" src="./assets/img/icones-carousel/Path-1.png" alt>
+			</div>
+		</section>
+
+		<section class="cards-categoria">
+			<a href="#produto" class="escondeVisualmente" id="categoria">Item atual categorias. Pular para o produtos</a>
+			<h2 class="cardsBase__titulo" tabindex="0">Busque por categoria: <span class="escondeVisualmente"> Lista de categorias.</span></h2>
+			<ul class="cards-categoria__container">
+				<li class="card-categoria" data-categoria="camisetas" aria-labelledby="camisetas" tabindex="0">
+					<div class="card-categoria__imagem cc1"></div>
+					<p class="card-categoria__descricao" id="camisetas">Camisetas</p>
+				</li>
+				<li class="card-categoria" data-categoria="bolsas" aria-labelledby="bolsas" tabindex="0">
+					<div class="card-categoria__imagem cc2"></div>
+					<p class="card-categoria__descricao" id="bolsas">Bolsas</p>
+				</li>
+				<li class="card-categoria" data-categoria="calcados" aria-labelledby="calcados" tabindex="0">
+					<div class="card-categoria__imagem cc3"></div>
+					<p class="card-categoria__descricao" id="calcados">Calçados</p>
+				</li>
+				<li class="card-categoria" data-categoria="calcas" aria-labelledby="calcas" tabindex="0">
+					<div class="card-categoria__imagem cc4"></div>
+					<p class="card-categoria__descricao" id="calcas">Calças</p>
+				</li>
+				<li class="card-categoria" data-categoria="casacos" aria-labelledby="casacos" tabindex="0">
+					<div class="card-categoria__imagem cc5"></div>
+					<p class="card-categoria__descricao" id="casacos">Casacos</p>
+				</li>
+				<li class="card-categoria" data-categoria="oculos" aria-labelledby="oculos" tabindex="0">
+					<div class="card-categoria__imagem cc6"></div>
+					<p class="card-categoria__descricao" id="oculos">Óculos</p>
+				</li>
+			</ul>
+		</section>
+
+		<section class="cards-produto">
+			<a href="#sobre" class="escondeVisualmente" id="produto">Item atual produtos. Pular para o seção sobre</a>
+			<h2 class="cardsBase__titulo" id="cardsProduto-titulo" tabindex="0">Produtos que estão bombando! <span class="escondeVisualmente"> Lista de Produtos.</span></h2>
+			<ul class="cards-produto__container"></ul>
+		</section>
+
+		<div class="modalProduto" id="modal">
+			<div class="modal-header">
+				<div class="modal-header__icone"></div>
+				<p class="modal-header__texto" id="headerTextoProduto" tabindex="0">Confira detalhes sobre o produto</p>
+				<div class="modal-header__icone--fechar" id="fechar" tabindex="0" aria-label="Fechar a janela modal"></div>
+			</div>
+			<div class="modalProduto__body">
+				<img class="modalProduto__imagem" >
+				<div class="modalProduto__descricao">
+					<h3 class="modalProduto__titulo" aria-describedby="descricaoProduto" tabindex="0"></h3>
+					<p class="modalProduto__texto" id="descricaoProduto"></p>
+					<hr class="modalProduto__linha">
+					<p class="modalProduto__preco" tabindex="0"></p>
+					<div class="modalProduto__detalhes">
+						<p class="detalhes__info" tabindex="0">Vendido e entregue por Riachuelo</p>
+						<hr class="detalhes__linha">
+						<fieldset>
+							<legend class="opcoes__titulo" tabindex="0">Cores:</legend>
+							<ul class="opcoes__container" id="cores"></ul>
+						</fieldset>
+						<hr class="detalhes__linha">
+						<fieldset>
+							<legend class="opcoes__titulo" tabindex="0">Tamanhos:</legend>
+							<ul class="opcoes__container" id="tamanhos"></ul>
+						</fieldset>
+						<button class="detalhes__botao btnBase">Adicionar à sacola</button>
+					</div>
+				</div> 
+			</div>
+		</div>
+
+		<section class="sobre">
+			<a href="#novidades" class="escondeVisualmente" id="sobre">Item atual seção sobre. Pular para o seção novidades</a>
+			<h2 class="sobre__titulo" tabindex="0" >Conheça todas as nossas facilidades</h2>
+			<div class="facilidades__container">
+				<div class="facilidade">
+					<div class="facilidade__icone icone1"></div>
+					<div class="facilidade__descricao" tabindex="0">
+						<h3 class="facilidade__descricao__titulo">PAGUE PELO PIX</h3>
+						<p class="facilidade__descricao__texto">Ganhe 5% OFF em pagamentos via PIX.</p>
+					</div>
+				</div>
+				<div class="facilidade">
+					<div class="facilidade__icone icone2"></div>
+					<div class="facilidade__descricao" tabindex="0">
+						<h3 class="facilidade__descricao__titulo">TROCA GRÁTIS</h3>
+						<p class="facilidade__descricao__texto">Fique livre para trocar em até 30 dias.</p>
+					</div>
+				</div>
+				<div class="facilidade">
+					<div class="facilidade__icone icone3"></div>
+					<div class="facilidade__descricao" tabindex="0">
+						<h3 class="facilidade__descricao__titulo">SUSTENTABILIDADE</h3>
+						<p class="facilidade__descricao__texto">Moda responsável, que respeita o meio ambiente.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="novidades">
+			<a href="#rodape" class="escondeVisualmente" id="novidades">Item atual seção novidades. Pular para o rodapé</a>
+			<p class="novidades__texto" tabindex="0">Quer receber nossas novidades, promoções exclusicas e 10% OFF na primeira
+				compra?
+				Cadastre-se!</p>
+			<form class="novidades__formulario">
+				<label for="email" class="email-rotulo">Email:</label>
+				<div class="email__container">
+					<input id="email" type="email" class="email-campo" minlength="5" placeholder="Digite seu email" pattern="^([A-Za-z0-9]+)((?:[\._\-][A-Za-z0-9]+)*)@(gmail|hotmail|outlook)\.(com|org|net)$" required>
+					<button class="formulario__botao btnBase" id="btn-enviar" disabled>Enviar</button>
+				</div>
+				<p class="mensagem-erro" id="erro" tabindex="0"></p>
+			</form>
+		</section>
+
+		<div class="modalNewsletter" id="modal" role="dialog">
+			<div class="modal-header">
+				<div class="modal-header__icone"></div>
+				<p class="modal-header__texto" id="headerTextoNews" tabindex="0" aria-describedby="modalDescricao"></p>
+				<div class="modal-header__icone--fechar" id="fechar" tabindex="0" aria-label="Fechar a janela modal"></div>
+			</div>
+			<div class="modalNewsletter__body">
+				<p class="modalNewsletter__descricao" id="modalDescricao"></p>
+			</div>
+		</div>
+	</main>
+	
+	<footer class="rodape">
+		<p class="rodape__texto" tabindex="0" id="rodape">2023 &copy; Desenvolvido por Alura | Projeto fictício sem fins comerciais.</p>
+	</footer>
+
+	<div class="modal-overlay" id="overlay"></div>
+
+	<script src="./assets/js/menu-hamburguer.js" type="module"></script>
+	<script src="./assets/js/carousel.js" type="module"></script>
+	<script src="./assets/js/card-produto.js" type="module"></script>
+	<script src="./assets/js/filtrarCategoria.js" type="module"></script>
+	<script src="./assets/js/filtrarPesquisa.js" type="module"></script>
+	<script src="./assets/js/modalBase.js" type="module"></script>
+	<script src="./assets/js/modalNewsletter.js" type="module"></script>
+	<script src="./assets/js/modalProduto.js" type="module"></script>
+	<script src="./assets/js/verificar-email.js" type="module"></script>
+</body>
+
+</html>

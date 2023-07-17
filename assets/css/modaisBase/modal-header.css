@@ -1,0 +1,37 @@
+.modal-header {
+    background-color: var(--preto);
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 16px 28px 16px 16px;
+}
+
+.modal-header__icone {
+    background: url(/assets/img/modal/check-circle.png);
+    width: 32px;
+    height: 32px;
+}
+
+.modal-header__texto {
+    position: absolute;
+    left: 68px;
+    width: 60%;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 23px;
+}
+
+.modal-header__icone--fechar {
+    background: url(/assets/img/modal/fechar.png) no-repeat center;
+    width: 16px;
+    height: 16px;
+    padding: 10px;
+}
+
+.modal-header__icone--fechar:hover,
+.modal-header__icone--fechar:focus {
+    cursor: pointer;
+    outline: 1.5px solid var(--cinza-secundario);
+}

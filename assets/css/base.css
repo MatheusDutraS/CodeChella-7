@@ -1,0 +1,65 @@
+:root {
+    --fonte-primaria: 'Inter', sans-serif;
+
+    --preto: #000;
+    --preto-secundario: #212529;
+    --branco: #fff;
+    --cinza: #CCC;
+    --cinza-secundario: #343a40;
+    --verde: #DAFF01;
+    --roxo: #9353FF;
+    --coral: #EE6471;
+    --laranja: #F87F46;
+}
+
+body {
+    position: relative;
+}
+
+.btnBase {
+    background-color: var(--roxo);
+    border: none;
+    color: var(--branco);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 8px 16px;
+}
+
+.btnBase:hover,
+.btnBase:focus {
+    background-color: var(--branco);
+    color: var(--roxo);
+    outline: 1.5px solid var(--roxo);
+}
+
+.cardsBase__titulo {
+    color: var(--preto-secundario);
+    font-family: var(--fonte-primaria);
+    font-size: 1.75rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.legenda, .escondeVisualmente {
+    position: absolute;
+    left: -9999px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.legenda {
+    top: 50%;
+}
+
+.linkEscondido {
+    cursor: auto;
+    color: var(--preto-secundario);
+}
+
+@media screen and (min-width: 768px) {
+    .cardsBase__titulo {
+        margin-bottom: 32px;
+    }
+}

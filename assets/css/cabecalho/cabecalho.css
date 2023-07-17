@@ -1,0 +1,53 @@
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background-color: var(--preto);
+    flex-wrap: wrap;
+}
+
+.cabecalho__imagem {
+    background-image: url(/assets/img/logos/Logo\ mobile.png);
+    width: 125.7px;
+    height: 18px;
+    margin: 20px 22px;
+}
+
+.menu-hamburguer {
+    background-image: url(/assets/img/Mobile/Ícones/menu-hamburguer.png);
+    width: 18px;
+    height: 18px;
+    margin-right: 22px;
+}
+
+.menu-hamburguer--fechar {
+    background: url(/assets/img/Mobile/Ícones/marca-cruzada.png) no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho {
+        flex-wrap: nowrap;
+        padding: 24px;
+        height: 58px;
+    }
+
+    .cabecalho__imagem {
+        background-image: url(/assets/img/Tablet/Logo\ tablet.png);
+        width: 99.5px;
+        height: 24px;
+        margin: 0;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        left: 140px;
+    }
+
+    .menu-hamburguer,
+    .menu-hamburguer--fechar {
+        display: none;
+    }
+}

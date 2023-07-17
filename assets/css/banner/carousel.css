@@ -1,0 +1,52 @@
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 48px 48px 30px;
+}
+
+.icone-carousel {
+    cursor: pointer;
+    padding: 25px 6.5px;
+}
+
+.icone-carousel:hover,
+.icone-carousel:focus {
+    background-color: rgb(128 128 128);
+    border: 1.5px solid var(--preto);
+    border-radius: 4px;
+    padding: 25px 5px
+}
+
+.navbar--carousel {
+    align-self: flex-end;
+}
+
+.carousel__indicadores {
+    display: flex;
+    gap: 10px;
+}
+
+.indicador {
+    display: block;
+    background-color: var(--branco);
+    cursor: pointer;
+    text-indent: -9999px;
+    overflow: hidden;
+    height: 6px;
+    width: 30px;
+}
+
+.indicador:hover,
+.indicador:focus {
+    background-color: var(--cinza);
+}
+
+.selecionado {
+    outline: 1px solid var(--preto);
+    background-color: var(--cinza-secundario);
+}

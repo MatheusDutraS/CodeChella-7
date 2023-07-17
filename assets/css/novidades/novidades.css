@@ -1,0 +1,32 @@
+.novidades {
+    border: 1px solid var(--preto-secundario);
+    font-family: var(--fonte-primaria);
+    margin: 24px;
+    padding: 24px 16px;
+}
+
+.novidades__texto {
+    color: var(--preto-secundario);
+    font-size: 1rem;
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.formulario__botao {
+    height: 38px;
+    width: 84px;
+}
+
+.formulario__botao:disabled {
+    background-color: var(--cinza);
+    color: var(--preto-secundario);
+}
+
+@media screen and (min-width: 768px) {
+    .novidades {
+        padding: 40px;
+        max-width: 638px;
+        margin: 24px auto;
+    }
+}
