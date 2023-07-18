@@ -8,21 +8,21 @@
 }
 
 .cabecalho__imagem {
-    background-image: url(/assets/img/logos/Logo\ mobile.png);
+    background-image: url(./assets/img/logos/Logo\ mobile.png);
     width: 125.7px;
     height: 18px;
     margin: 20px 22px;
 }
 
 .menu-hamburguer {
-    background-image: url(/assets/img/Mobile/Ícones/menu-hamburguer.png);
+    background-image: url(./assets/img/Mobile/Ícones/menu-hamburguer.png);
     width: 18px;
     height: 18px;
     margin-right: 22px;
 }
 
 .menu-hamburguer--fechar {
-    background: url(/assets/img/Mobile/Ícones/marca-cruzada.png) no-repeat;
+    background: url(./assets/img/Mobile/Ícones/marca-cruzada.png) no-repeat;
 }
 
 @media screen and (min-width: 768px) {
@@ -33,7 +33,7 @@
     }
 
     .cabecalho__imagem {
-        background-image: url(/assets/img/Tablet/Logo\ tablet.png);
+        background-image: url(./assets/img/Tablet/Logo\ tablet.png);
         width: 99.5px;
         height: 24px;
         margin: 0;

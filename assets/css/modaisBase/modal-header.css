@@ -9,7 +9,7 @@
 }
 
 .modal-header__icone {
-    background: url(/assets/img/modal/check-circle.png);
+    background: url(./assets/img/modal/check-circle.png);
     width: 32px;
     height: 32px;
 }
@@ -24,7 +24,7 @@
 }
 
 .modal-header__icone--fechar {
-    background: url(/assets/img/modal/fechar.png) no-repeat center;
+    background: url(./assets/img/modal/fechar.png) no-repeat center;
     width: 16px;
     height: 16px;
     padding: 10px;

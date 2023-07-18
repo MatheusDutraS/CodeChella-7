@@ -1,25 +1,25 @@
 .icone1 {
-    background-image: url(/assets/img/Mobile/Ícones/x-diamond.png);
+    background-image: url(./assets/img/Mobile/Ícones/x-diamond.png);
 }
 
 .icone2 {
-    background-image: url(/assets/img/Mobile/Ícones/arrow-repeat.png);
+    background-image: url(./assets/img/Mobile/Ícones/arrow-repeat.png);
 }
 
 .icone3 {
-    background-image: url(/assets/img/Mobile/Ícones/flower.png);
+    background-image: url(./assets/img/Mobile/Ícones/flower.png);
 }
 
 @media screen and (min-width: 768px) {
     .icone1 {
-        background-image: url(/assets/img/Tablet/Ícones/x-diamond.png);
+        background-image: url(./assets/img/Tablet/Ícones/x-diamond.png);
     }
     
     .icone2 {
-        background-image: url(/assets/img/Tablet/Ícones/arrow-repeat.png);
+        background-image: url(./assets/img/Tablet/Ícones/arrow-repeat.png);
     }
     
     .icone3 {
-        background-image: url(/assets/img/Tablet/Ícones/flower.png);
+        background-image: url(./assets/img/Tablet/Ícones/flower.png);
     }
 }
