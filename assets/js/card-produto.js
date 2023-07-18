@@ -11,23 +11,27 @@ for (let i = 0; i < categorias.length; i++) {
     produtos.push(produtoUrl)
 }
 
-produtos.forEach(produto => fetchProduto(produto))
+const repeticao = 1
+produtos.forEach(produto => fetchProduto(produto, repeticao))
 
-export async function fetchProduto(produto) {
+export async function fetchProduto(produto, repeticao) {
     try {
         var getProduto = await fetch(produto)
         var produtoConvertido = getProduto.json()
 
-        pegarProduto(produtoConvertido)
+        pegarProduto(produtoConvertido, repeticao)
     } catch (erro) {
         console.log(erro)
     }
 }
 
-async function pegarProduto(produtoConvertido) {
+async function pegarProduto(produtoConvertido, repeticao) {
     const produto = await produtoConvertido
+    if (repeticao == "tamanhoProduto") {
+        repeticao = produto.length
+    }
     
-    for (let i = 0; i < produto.length; i++) {
+    for (let i = 0; i < repeticao; i++) {
         const precoReal = produto[i].preco.toLocaleString("pt-br", { style: "currency", currency: "BRL" })
 
         const estruturaCard = `

@@ -6,10 +6,12 @@ cardsCategoria.forEach(card => {
     card.addEventListener('click', () => {
         const categoria = card.dataset.categoria
         const categoriaUrl = `http://localhost:3000/${categoria}`
+        let repeticao = "tamanhoProduto"
+        const teste = console.log(categoriaUrl.length)
 
         cardsTitulo.innerHTML = `Categoria: ${card.children[1].textContent} <span class="escondeVisualmente"> Lista de produtos.</span>`
         cardsProduto.innerHTML = ""
-        fetchProduto(categoriaUrl)
+        fetchProduto(categoriaUrl, repeticao)
         cardsTitulo.focus()
     })
 })
