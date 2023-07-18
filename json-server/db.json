@@ -8,6 +8,24 @@
             "id": 1,
             "cores": "Verde Claro,Preto,OFFwhite",
             "tamanhos": "PP,P,M,G,GG,XG"
+        },
+        {
+            "imagem": "./assets/img/camiseta1.png",
+            "titulo": "Camiseta1",
+            "texto": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "preco": 50,
+            "id": 2,
+            "cores": "Branco,Preto,Cinza",
+            "tamanhos": "PP,P,M,G,GG,XG"
+        },
+        {
+            "imagem": "./assets/img/camiseta1.png",
+            "titulo": "Camiseta2",
+            "texto": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "preco": 50,
+            "id": 3,
+            "cores": "Branco,Preto,Cinza",
+            "tamanhos": "PP,P,M,G,GG,XG"
         }
     ],
     "calcas": [
